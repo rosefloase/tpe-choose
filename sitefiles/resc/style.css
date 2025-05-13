@@ -69,3 +69,18 @@ font-size: 0.35in;
 	width: 100%;
 	text-align: center;
 }
+
+.bigimg{
+	width: 70%;
+	image-rendering: pixelated;
+	margin: 3%;
+}
+
+#psflaimg{
+	padding: 1%;
+	border-style: solid;
+	border-width: medium;
+	border-color: green;
+	border-radius: 3px;
+	background-color: #e6ffff;
+}
