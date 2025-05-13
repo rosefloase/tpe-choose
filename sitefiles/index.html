@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choose your fighter! TPE, or PSFLA?</title>
+    <link href="/resc/style.css" rel="stylesheet" type="text/css" media="all">
+    <meta name="twitter:image" content="https://thepersonever.net/images/enter.jpg">
+  </head>
+<body>
+
+<div id=fulldiv class=tpe-body style="margin: auto; text-align: center;">
+<img src=/resc/image/tke.png>
+<h3 class=tpe-h3><span>!! <strong>epilepsy warning</strong> !!
+<br> remember 2 clear your cache!! (and to turn on autoplay)
+<br> this site needs javascript to run correctly. click on the enter button when it appears! :D
+<br> <a class=tpe-a href=example>if you're on a computer, maybe read this first?</a>
+</span></h3>
+</div>
+	
+<div id=fulldiv class=psfla-body style="margin: auto; text-align: center;">
+<img src=/resc/image/tke.png>
+<h3 class=psfla-h3><span>!! <strong>epilepsy warning</strong> !!
+<br> remember 2 clear your cache!! (and to turn on autoplay)
+<br> this site needs javascript to run correctly. click on the enter button when it appears! :D
+<br> <a class=psfla-a href=example>if you're on a computer, maybe read this first?</a>
+</span></h3>
+</div>
+	
+<div id="lowerhtml">
+    <p> <span>cumulative stats:</span>
+		<br><span><asdf id=updated></asdf>
+		<br><asdf id=visitors></asdf>
+		<br><asdf id=followers></asdf>
+	</span></p> 
+  
+	<p><span>you can find the code to put your stats up on your site 
+		<a href=https://max.nekoweb.org/resources/nekoweb-stats/ target=_blank>here!
+	</a></span></p>
+      
+<script>
+
+// this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
+/*
+let username = "thepersonever"; // <<<--- Insert your username here!
+
+(async () => {
+  try {
+    const request = await fetch(`https://nekoweb.org/api/site/info/${username}`,);
+    const json = await request.json();
+
+    const updated = new Date(json.updated_at).toLocaleDateString(); // Formats Last Updated text
+    const created = new Date(json.created_at).toLocaleDateString(); // Formats Creation Date text
+
+    var oldviews = commaize((json.views + 303460));
+	var commaviews = commaize(json.views);
+  
+    if (document.getElementById("updated")) document.getElementById("updated").innerHTML = `<span>last updated ${updated}!</span>`;
+    if (document.getElementById("visitors")) document.getElementById("visitors").innerHTML = `<span>${oldviews} hits (${commaviews} on nekoweb, 303,460 from neocities)</span>`;
+    if (document.getElementById("followers")) document.getElementById("followers").innerHTML = `<span>${json.followers} nekoweb followers :D <a href=https://nekoweb.org/follow/thepersonever target=_blank>join the club!</a></span>`;
+  } catch (error) {
+    console.error(error);
+    // If you wish to insert some fallback here, you may do so!
+  }
+})();
+ 
+function commaize(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+*/
+</script>
+</div>
+</center>
+ 
+  </body>
+</html>
