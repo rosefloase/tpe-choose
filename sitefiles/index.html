@@ -13,10 +13,11 @@
 <img src=/resc/image/tkesmall.png class=bigimg>
 <h3 class=tpe-h3><span>thepersonever is my personal website!
 <br>with visual language that is sharp, bright, and proud, and with a unique design for every page, this website is a love letter to the indie web!!
-<br>hand coded with love &lt;3 not for those with sensitive eyes
-<br>
-<br><a href=https://thepersonever.net/><span>remember 2 clear ur cache!!</span></a>
+<br>hand coded with love &lt;3 - not for those with sensitive eyes
+<br>	
+<br>last commit: <a href=https://github.com/rosefloase/thepersonever target=_blank id="tperepo"></a>
 </span></h3>
+<h1><a href=https://thepersonever.net/><h1><span>enter thepersonever!!!</span></h1></a></h1>
 </div>
 	
 <div id=fulldiv class=psfla-body style="margin: auto; text-align: center;">
@@ -26,8 +27,11 @@
 	<h2 class=psfla-h2>PSFL adventures is a site created to host my MSPAs!
 	<br>MSPAs combine the power of the web with art to create stories. if you want an example, check out <a href=https://homestuck.github.io/ target=_blank>hussie's mspas</a>!
 	<br>while not as bold as thepersonever, its design is more accessible
-	<br>constructed with 11ty!</h2>
-	<h1 class=psfla-h1>&gt; <a href=https://psfla.net/><h1 class=psfla-h1 style="display:inline;">websurfer: enter</h1></a></h1>
+	<br>constructed with 11ty!
+	<br>
+	<br>last commit: <a href=https://github.com/psfla/11tyserver target=_blank id="psflarepo"></a></h2>
+
+	<h1 class=psfla-h1>&gt; <a href=https://psfla.net/><h1 class=psfla-h1 style="display:inline;">websurfer: choose psfla</h1></a></h1>
 </div>
 </div>
 	
@@ -43,9 +47,7 @@
 	</a></span></p>
       
 <script>
-
 // this script is under the MIT license (https://max.nekoweb.org/resources/license.txt)
-/*
 let username = "thepersonever"; // <<<--- Insert your username here!
 
 (async () => {
@@ -71,7 +73,21 @@ let username = "thepersonever"; // <<<--- Insert your username here!
 function commaize(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
-*/
+</script>
+<script>
+// this script is sexy. and stolen from https://stackoverflow.com/questions/67986923/how-to-display-the-name-of-the-latest-commit-on-github-to-my-website
+
+fetch('https://api.github.com/repos/rosefloase/thepersonever/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('tperepo').innerHTML = res[0].commit.message
+  });
+  
+fetch('https://api.github.com/repos/psfla/11tyserver/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('psflarepo').innerHTML = res[0].commit.message
+  });
 </script>
 </div>
 </center>
