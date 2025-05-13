@@ -56,6 +56,18 @@ font-size: 0.35in;
   font-family:"sansation";	
 }
 
+.psfla-h1{
+ font-size: 0.3in;
+}
+
+.psfla-p{
+ font-size: 0.2in;
+}
+
+.psfla-a{
+ font-size: 0.25in;
+}
+
 #fulldiv{
   min-height: 100vh;
   float: left; 
@@ -83,4 +95,14 @@ font-size: 0.35in;
 	border-color: green;
 	border-radius: 3px;
 	background-color: #e6ffff;
+}
+
+#psfla-main{
+	margin: auto;
+	max-width: 80%;
+	background-color: #99ff66;
+	border-style: solid;
+	border-width: medium;
+	border-color: green;
+	border-radius: 3px;
 }
