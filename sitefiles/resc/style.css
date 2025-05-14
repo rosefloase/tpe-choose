@@ -1,5 +1,11 @@
+html{
+	position:relative;
+	min-height: 100%;
+}
+
 body{
 	margin: 0px;
+	height: 100%;
 }
 
 @font-face {
@@ -69,19 +75,21 @@ font-size: 0.35in;
 }
 
 #fulldiv{
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 10.5in;
   float: left; 
   width: 50%;
 }
 
 #lowerhtml{
 	font-family: Courier New;
-	position: absolute; 
+	position: fixed; 
 	bottom: 1%;
 	width: fit-content;
 	text-align: center;
 	left: 50%;
 	transform: translate(-50%);
+	max-height: 3in;
 }
 
 .bigimg{
