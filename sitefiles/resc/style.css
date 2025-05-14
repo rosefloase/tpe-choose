@@ -78,8 +78,10 @@ font-size: 0.35in;
 	font-family: Courier New;
 	position: absolute; 
 	bottom: 1%;
-	width: 100%;
+	width: fit-content;
 	text-align: center;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .bigimg{
