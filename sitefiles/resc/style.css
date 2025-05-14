@@ -116,3 +116,10 @@ font-size: 0.35in;
 	border-color: green;
 	border-radius: 3px;
 }
+
+ @media screen and (orientation:portrait) {	
+	#fulldiv{
+		width: 100vw;
+		height: unset;
+	}
+ }
